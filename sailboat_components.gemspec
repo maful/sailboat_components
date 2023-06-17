@@ -24,12 +24,14 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"] - Dir["lib/**/*.rake"]
   end
 
-  spec.add_runtime_dependency "actionview", ">= 7.0.5"
-  spec.add_runtime_dependency "activesupport", ">= 7.0.5"
-  spec.add_runtime_dependency "view_component", [">= 3.2", "< 4.0"]
+  spec.add_runtime_dependency("actionview", ">= 7.0.5")
+  spec.add_runtime_dependency("activesupport", ">= 7.0.5")
+  spec.add_runtime_dependency("view_component", [">= 3.2", "< 4.0"])
 
-  spec.add_development_dependency "minitest", "~> 5.18"
-  spec.add_development_dependency "rubocop", "~> 1.52"
-  spec.add_development_dependency "rubocop-shopify", "~> 2.14"
-  spec.add_development_dependency "rubocop-performance", "~> 1.18"
+  spec.add_development_dependency("minitest", "~> 5.18")
+  spec.add_development_dependency("rubocop", "~> 1.52")
+  spec.add_development_dependency("rubocop-performance", "~> 1.18")
+  spec.add_development_dependency("rubocop-shopify", "~> 2.14")
+  spec.add_development_dependency("sprockets")
+  spec.add_development_dependency("sprockets-rails")
 end
