@@ -1,0 +1,22 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+require:
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "test/tmp/**/*"
+    - "demo/**/*"
+    - "**/vendor/**/*"
+    - "**/node_modules/**/*"
+    - "test/previews/docs/**/*"
+  TargetRubyVersion: 2.7
+
+Lint/MissingSuper:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: true
+  MinNameLength: 2

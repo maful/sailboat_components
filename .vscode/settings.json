@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": false,
+  "rubyLsp.rubyVersionManager": "asdf",
+  "rubyLsp.formatter": "rubocop",
+  "[ruby]": {
+    "editor.formatOnSave": true
+  }
+}

@@ -1,0 +1,29 @@
+# Generated from npm prepare
+app/components/**/*.js
+app/components/**/*.css
+app/components/**/*.css.map
+app/assets/
+
+/doc/
+/log/*.log
+/pkg/
+/tmp/
+/demo/db/*.sqlite3
+/demo/db/*.sqlite3-*
+/demo/log/*.log
+/demo/storage/
+/demo/tmp/
+
+**/node_modules/
+
+## Vendored and built gems
+.bundle
+vendor/
+sailboat_components*.gem
+
+# MacOS system files
+.DS_Store
+
+# Files for version managers
+.ruby-version
+.tool-versions

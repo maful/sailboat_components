@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+if ! command -v overmind &> /dev/null
+then
+  echo "Please install overmind."
+  exit 1
+fi
+
+# Gems
+bundle install --path vendor/bundle
+
+# Set up demo
+pushd demo
+bundle install --path vendor/bundle
+# npm install
+# npm link sailboat-components
+popd
+
+while [[ "$#" > 0 ]]; do case $1 in
+  -d|--debug) debug="1"; shift;;
+esac; done
+
+exec overmind start "$@"
