@@ -18,8 +18,12 @@ module Sailboat
       deny_single_argument(:tag, "This component has a fixed tag.", **arguments)
     end
 
+    def raise_on_invalid_options?
+      Rails.application.config.sailboat_components.raise_on_invalid_options
+    end
+
     def should_raise_error?
-      !Rails.env.production? && !ENV["SAILBOAT_WARNINGS_DISABLED"]
+      !Rails.env.production? && raise_on_invalid_options? && !ENV["SAILBOAT_WARNINGS_DISABLED"]
     end
   end
 end

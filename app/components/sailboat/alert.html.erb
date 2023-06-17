@@ -1,7 +1,11 @@
 <%= render Sailboat::BaseComponent.new(**@system_arguments) do %>
   <div>
     <div><%= content %></div>
-    <%= action %>
+    <% if action? %>
+      <div class="alert__action">
+        <%= action %>
+      </div>
+    <% end %>
   </div>
 
   <% if @dismissible %>

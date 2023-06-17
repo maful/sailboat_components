@@ -1,8 +1,8 @@
 #!/bin/bash
-#/ Usage: script/test <filename:test_line>
-#/ 1. `script/test FILE` runs all tests in the file.
-#/ 1. `script/test FILE:LINE` runs test in specific line of the file.
-#/ 1. `script/test 'GLOB'` runs all tests for matching glob.
+#/ Usage: scripts/test <filename:test_line>
+#/ 1. `scripts/test FILE` runs all tests in the file.
+#/ 1. `scripts/test FILE:LINE` runs test in specific line of the file.
+#/ 1. `scripts/test 'GLOB'` runs all tests for matching glob.
 #/     * make sure to wrap the `GLOB` in single quotes `''`.
 
 if ! [ $# -eq 0 ]; then

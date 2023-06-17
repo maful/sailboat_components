@@ -25,6 +25,7 @@ module Sailboat
       @system_arguments = deny_tag_argument(**system_arguments)
       @system_arguments[:tag] = :div
       @system_arguments[:classes] = class_names(
+        @system_arguments[:classes],
         "alert",
         SCHEME_MAPPINGS.fetch(scheme, SCHEME_MAPPINGS[DEFAULT_SCHEME]),
       )
