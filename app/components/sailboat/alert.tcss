@@ -1,0 +1,33 @@
+/* alert */
+
+.alert {
+  @apply rounded-md p-4 text-sm flex items-start;
+
+  &.alert--info {
+    @apply bg-primary-50 text-primary-500;
+  }
+
+  &.alert--error {
+    @apply bg-red-50 text-red-500;
+  }
+
+  &.alert--warning {
+    @apply bg-yellow-50 text-yellow-500;
+  }
+
+  &.alert--success {
+    @apply bg-green-50 text-green-500;
+  }
+
+  & .alert__close {
+    @apply ml-auto;
+
+    & svg {
+      @apply h-5 w-5;
+    }
+  }
+
+  & .alert__action {
+    @apply mt-2 flex space-x-4;
+  }
+}

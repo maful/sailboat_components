@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": false,
+  "tailwindCSS.experimental.configFile": "./demo/tailwind.config.js",
   "rubyLsp.rubyVersionManager": "asdf",
   "rubyLsp.formatter": "rubocop",
   "[ruby]": {
