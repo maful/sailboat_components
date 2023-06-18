@@ -1,0 +1,60 @@
+/* badge */
+
+.badge {
+  @apply rounded-full font-semibold;
+
+  &.badge--gray {
+    @apply bg-gray-100 text-gray-600;
+  }
+
+  &.badge--primary {
+    @apply bg-primary-50 text-primary-600;
+  }
+
+  &.badge--warning {
+    @apply bg-yellow-50 text-yellow-600;
+  }
+
+  &.badge--success {
+    @apply bg-green-50 text-green-600;
+  }
+
+  &.badge--error {
+    @apply bg-red-50 text-red-600;
+  }
+
+  &.badge--medium {
+    @apply text-xs px-2 py-1;
+
+    &.badge--dismissible {
+      & button {
+        & svg {
+          @apply h-3 w-3;
+        }
+      }
+    }
+  }
+
+  &.badge--large {
+    @apply text-sm px-3 py-1;
+
+    &.badge--dismissible {
+      & button {
+        & svg {
+          @apply h-4 w-4;
+        }
+      }
+    }
+  }
+
+
+  &.badge--dismissible {
+    @apply inline-flex items-center gap-1;
+
+    & button {
+      & svg {
+        @apply opacity-80;
+      }
+    }
+  }
+}

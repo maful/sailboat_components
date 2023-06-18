@@ -2,3 +2,4 @@
 
 @import "./alert.tcss";
 @import "./button.tcss";
+@import "./badge.tcss";
