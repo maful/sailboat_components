@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "node esbuild.config.js"
+    "build:js": "node esbuild.config.js",
+    "build:css": "npx postcss -o app/assets/builds/application.css app/assets/stylesheets/application.css"
   },
   "dependencies": {
     "@rails/actioncable": "^7.0.5",

@@ -1,0 +1,7 @@
+.button-group {
+  @apply inline-flex -space-x-0 divide-x divide-gray-300 overflow-hidden rounded-lg border border-gray-300 shadow-sm;
+
+  & .button {
+    @apply rounded-none border-0 shadow-none;
+  }
+}
