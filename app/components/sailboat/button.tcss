@@ -1,0 +1,31 @@
+.button {
+  @apply rounded-lg text-center font-medium shadow-sm transition-all focus:ring disabled:cursor-not-allowed;
+
+  &.button--gray {
+    @apply border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 focus:ring-gray-100 disabled:border-gray-100 disabled:bg-gray-50 disabled:text-gray-400;
+  }
+
+  &.button--primary {
+    @apply border border-primary-500 bg-primary-500 text-white hover:bg-primary-700 hover:border-primary-700 focus:ring-primary-200 disabled:border-primary-300 disabled:bg-primary-300;
+  }
+
+  &.button--success {
+    @apply border border-green-500 bg-green-500 text-white hover:border-green-700 hover:bg-green-700 focus:ring-green-200 disabled:border-green-300 disabled:bg-green-300;
+  }
+
+  &.button--error {
+    @apply border border-red-500 bg-red-500 text-white hover:border-red-700 hover:bg-red-700 focus:ring-red-200 disabled:border-red-300 disabled:bg-red-300;
+  }
+
+  &.button--small {
+    @apply px-4 py-2 text-sm;
+  }
+
+  &.button--medium {
+    @apply px-5 py-2.5 text-sm;
+  }
+
+  &.button--large {
+    @apply px-6 py-3 text-base;
+  }
+}

@@ -4,6 +4,8 @@ app/components/**/*.css
 app/components/**/*.css.map
 app/assets/
 
+demo/app/assets/builds/
+
 /doc/
 /log/*.log
 /pkg/

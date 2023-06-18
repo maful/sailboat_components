@@ -1,0 +1,17 @@
+<div style="display: flex; gap: 1rem;">
+  <%= render(Sailboat::Button.new) do %>
+    Button
+  <% end %>
+
+  <%= render(Sailboat::Button.new(scheme: :primary)) do %>
+    Button
+  <% end %>
+
+  <%= render(Sailboat::Button.new(scheme: :success)) do %>
+    Button
+  <% end %>
+
+  <%= render(Sailboat::Button.new(scheme: :error)) do %>
+    Button
+  <% end %>
+</div>
