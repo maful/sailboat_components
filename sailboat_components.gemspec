@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("capybara", "~> 3")
   spec.add_development_dependency("cuprite", "= 0.13")
   spec.add_development_dependency("minitest", "~> 5.18")
+  spec.add_development_dependency("mocha")
   spec.add_development_dependency("pry")
   spec.add_development_dependency("rubocop", "~> 1.52")
   spec.add_development_dependency("rubocop-performance", "~> 1.18")

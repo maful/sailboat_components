@@ -21,3 +21,7 @@ gem "lookbook", "~> 2.0.5"
 
 # Use Puma as the app server
 gem "puma", "~> 6.3.0"
+
+group :test do
+  gem "webmock"
+end

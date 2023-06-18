@@ -13,6 +13,9 @@ app/assets/
 /demo/log/*.log
 /demo/storage/
 /demo/tmp/
+test/snapshots/
+test/snapshots/docs/
+demo/test/snapshots/
 
 **/node_modules/
 

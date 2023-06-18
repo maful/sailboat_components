@@ -7,6 +7,7 @@ namespace :test do
   task all: [
     :components,
     :lib,
+    :system,
   ]
 
   Rake::TestTask.new(:single) do |t|
@@ -31,6 +32,12 @@ namespace :test do
     t.test_files = FileList[
       "test/lib/**/*_test.rb"
     ]
+  end
+
+  Rake::TestTask.new(:system) do |t|
+    t.warning = false
+    t.libs << "test"
+    t.test_files = FileList["test/system/**/*_test.rb"]
   end
 end
 
