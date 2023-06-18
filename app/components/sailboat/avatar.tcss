@@ -1,0 +1,7 @@
+.avatar {
+  @apply inline-block overflow-hidden flex-shrink-0 align-middle rounded-md;
+
+  &.avatar--circle {
+    @apply rounded-full;
+  }
+}
