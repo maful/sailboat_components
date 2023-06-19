@@ -1,0 +1,19 @@
+.accordion {
+  > .accordion__summary {
+    @apply flex cursor-pointer list-none items-center justify-between py-4 text-lg font-medium text-secondary-900;
+
+    > .accordion__caret {
+      @apply text-secondary-500;
+
+      > .caret {
+        @apply block h-5 w-5 transition-all duration-300;
+      }
+    }
+  }
+
+  &[open] {
+    > .accordion__summary > .accordion__caret > .caret {
+      @apply rotate-180;
+    }
+  }
+}

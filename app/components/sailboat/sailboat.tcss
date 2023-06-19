@@ -5,3 +5,4 @@
 @import "./badge.tcss";
 @import "./button_group.tcss";
 @import "./avatar.tcss";
+@import "./accordion.tcss";
