@@ -1,0 +1,5 @@
+<%= render Sailboat::BaseComponent.new(**@system_arguments) do %>
+  <% if @content_position != Sailboat::Divider::DEFAULT_CONTENT_POSITION %>
+    <%= content %>
+  <% end %>
+<% end %>

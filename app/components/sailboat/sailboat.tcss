@@ -8,3 +8,4 @@
 @import "./accordion.tcss";
 @import "./breadcrumbs.tcss";
 @import "./card.tcss";
+@import "./divider.tcss";

@@ -1,0 +1,17 @@
+.divider {
+  &.divider--default {
+    @apply h-px border-0 bg-gray-300;
+  }
+
+  &.divider--center {
+    @apply flex items-center gap-4 before:h-px before:flex-1 before:bg-gray-300 before:content-[""] after:h-px after:flex-1 after:bg-gray-300 after:content-[""];
+  }
+
+  &.divider--left {
+    @apply flex items-center gap-4 after:h-px after:flex-1 after:bg-gray-300 after:content-[''];
+  }
+
+  &.divider--right {
+    @apply flex items-center gap-4 before:h-px before:flex-1 before:bg-gray-300 before:content-[''];
+  }
+}
