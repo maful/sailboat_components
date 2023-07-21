@@ -1,0 +1,8 @@
+<%= render Sailboat::BaseComponent.new(**@system_arguments) do %>
+  <%= render Sailboat::BaseComponent.new(tag: :ol, classes: class_names("breadcrumb__list", "breadcrumb__list--background" => @background)) do %>
+    <% items.each_with_index do |item, index| %>
+      <% item.selected = index == items.length - 1 %>
+      <%= item %>
+    <% end %>
+  <% end %>
+<% end %>

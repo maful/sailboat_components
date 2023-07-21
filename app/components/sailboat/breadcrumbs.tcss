@@ -1,0 +1,35 @@
+nav.breadcrumb {
+  > .breadcrumb__list {
+    @apply inline-flex items-center py-2 text-sm font-medium;
+
+    &.breadcrumb__list--background {
+      @apply bg-secondary-50 rounded px-4;
+    }
+  }
+
+  .breadcrumb__item {
+    @apply inline-flex items-center text-secondary-500 hover:text-secondary-600;
+
+    &::after {
+      @apply inline-block border-secondary-400 border-solid my-0 mx-4;
+      height: 0.8em;
+      content: '';
+      border-right-width: 0.1em;
+      transform: rotate(15deg);
+    }
+
+    &[aria-current]:not([aria-current='false']) {
+      &::after {
+        content: none;
+      }
+    }
+
+    &.breadcrumb__item--selected {
+      @apply text-secondary-700 hover:text-secondary-700;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
