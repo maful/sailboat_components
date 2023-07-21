@@ -7,3 +7,4 @@
 @import "./avatar.tcss";
 @import "./accordion.tcss";
 @import "./breadcrumbs.tcss";
+@import "./card.tcss";

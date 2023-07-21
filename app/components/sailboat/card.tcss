@@ -1,0 +1,15 @@
+.card {
+  @apply rounded-lg bg-white shadow;
+
+  & .card__body {
+    @apply p-4;
+  }
+
+  & .card__header {
+    @apply text-xl font-medium text-gray-900;
+  }
+
+  & .card__content {
+    @apply mt-1 text-gray-500;
+  }
+}

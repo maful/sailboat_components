@@ -1,0 +1,10 @@
+<%= render Sailboat::BaseComponent.new(**@system_arguments) do %>
+  <div class="card__body">
+    <% if header? %>
+      <%= header %>
+    <% end %>
+    <div class="card__content">
+      <%= content %>
+    </div>
+  </div>
+<% end %>
