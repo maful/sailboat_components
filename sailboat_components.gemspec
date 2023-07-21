@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"] - Dir["lib/**/*.rake"]
+    Dir["{app,lib}/**/*", "LICENSE", "Rakefile", "README.md"] - Dir["lib/**/*.rake"]
   end
 
   spec.add_runtime_dependency("actionview", ">= 7.0.5")
