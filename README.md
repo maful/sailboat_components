@@ -1,4 +1,8 @@
-# SailboatComponents
+<p align="center">
+  <img src="./.github/sailboat_components.png" width="1280" title="Social Card Ruby Phosphor Icons">
+</p>
+
+# Sailboat Components
 
 ViewComponents for the Sailboat UI.
 
