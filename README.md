@@ -1,7 +1,8 @@
 # SailboatComponents
-Short description and motivation.
 
-## Usage
+ViewComponents for the Sailboat UI.
+
+## Usage (IN PROGRESS)
 How to use my plugin.
 
 ## Installation
